@@ -2,8 +2,10 @@
 # e.g. `make test TESTS=tests/test_polypipe.py::PolyPypeTestCase::test_param_too_large`
 TESTS = .
 
-test:
+test_requirements:
 	pip install -e .[test]
+
+test:
 	py.test $(TESTS)
 
 quality:
